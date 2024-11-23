@@ -27,11 +27,12 @@ CSS Framework: CSS Modules
 API Integration: Axios
 
 Installation and Setup
-Clone the repository:
-git clone https://github.com/<your-username>/<repository-name>.git
 
+Clone the repository:
+
+git clone https://github.com/Abhi21aug/data-table.git
 Navigate to the project directory:
-cd <repository-name>
+cd data-table
 
 Install dependencies:
 npm install
