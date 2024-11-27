@@ -17,7 +17,6 @@ const DataTable: React.FC = () => {
   );
 
   useEffect(() => {
-    // Fetch data from JSONPlaceholder API
     const fetchData = async () => {
       try {
         const response = await axios.get(
@@ -63,14 +62,17 @@ const DataTable: React.FC = () => {
   };
 
   return (
-    <div className="dataTable">
-      <input
-        type="text"
-        placeholder="Search..."
-        onChange={handleFilter}
-        className="searchInput"
-        aria-label="Search Table"
-      />
+    <div className="dataTableWrapper">
+      <div className="stickyHeader">
+        <h1>Data Table</h1>
+        <input
+          type="text"
+          placeholder="Search..."
+          onChange={handleFilter}
+          className="searchInput"
+          aria-label="Search Table"
+        />
+      </div>
       <div className="tableContainer">
         <table role="table" aria-label="Data Table">
           <thead>
